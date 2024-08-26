@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#SideBar {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: -300px;
+  transition: all 1s;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  padding: 20px 24px;
+}
+
+#SideBar.active {
+  left: 0;
+}
+
+#SideBar .toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+}
+
+.toggle-btn {
+  font-size: 35px;
+  margin-top: -20px;
+}
+
+li:hover {
+  background: rgb(11, 164, 159);
+  color: black;
+  transition: all 1s;
+}
